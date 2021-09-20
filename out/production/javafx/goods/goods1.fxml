@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goods.Goods">
+
+    <children>
+        <GridPane gridLinesVisible="true" layoutX="108.0" layoutY="125.0" prefHeight="432.0" prefWidth="386.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.6" minWidth="10.0" prefWidth="258.8" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.6" minWidth="10.0" prefWidth="67.60000000000002" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="337.0" minWidth="10.0" prefWidth="137.8" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="157.4" minHeight="0.0" prefHeight="46.2" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="458.59999999999997" minHeight="10.0" prefHeight="393.6" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="68.00003051757812" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label alignment="CENTER" prefHeight="37.0" prefWidth="250.0" text="Items">
+               <font>
+                  <Font size="27.0" />
+               </font></Label>
+                <Label alignment="CENTER" prefHeight="43.0" prefWidth="65.0" text="Qty." GridPane.columnIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+                <Label alignment="CENTER" prefHeight="70.0" prefWidth="159.0" text="Price" GridPane.columnIndex="2">
+               <font>
+                  <Font size="27.0" />
+               </font></Label>
+                <Label fx:id="item" alignment="TOP_CENTER" prefHeight="461.0" prefWidth="225.0" GridPane.rowIndex="1" />
+                <Label fx:id="qty" alignment="TOP_CENTER" prefHeight="482.0" prefWidth="105.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label fx:id="price" alignment="TOP_CENTER" prefHeight="390.0" prefWidth="138.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            </children>
+        </GridPane>
+        <Button fx:id="itemb" layoutX="166.0" layoutY="36.0" mnemonicParsing="false" onAction="#itemb" prefHeight="62.0" prefWidth="282.0" text="TOTAL GOODS">
+         <font>
+            <Font size="31.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

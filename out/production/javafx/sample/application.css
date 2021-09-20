@@ -1,0 +1,9 @@
+.root{
+   -fx-background-color:#0C6980;
+}
+#btn{
+   -fx-font-size:30px;
+   -fx-background-color:white;
+   -fx-text-fill:blue;
+   
+}

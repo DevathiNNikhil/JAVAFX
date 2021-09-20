@@ -1,0 +1,10 @@
+apple
+banana
+icecream
+pizza
+burger
+frenchfries
+rolls
+pizza
+burger
+milk

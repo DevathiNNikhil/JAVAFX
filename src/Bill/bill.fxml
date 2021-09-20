@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bill.Bill">
+   <children>
+      <Label fx:id="status" alignment="CENTER" layoutX="219.0" layoutY="112.0" prefHeight="26.0" prefWidth="161.0" textFill="#ff0101" />
+      <TextField fx:id="item" layoutX="170.0" layoutY="492.0" promptText="Item" />
+      <TextField fx:id="qty" layoutX="337.0" layoutY="492.0" prefHeight="26.0" prefWidth="51.0" promptText="Qty." />
+      <Button fx:id="btn" layoutX="422.0" layoutY="492.0" mnemonicParsing="false" onAction="#btn" prefHeight="26.0" prefWidth="72.0" text="Add" textOverrun="CLIP" />
+      <GridPane gridLinesVisible="true" layoutX="124.0" layoutY="145.0" prefHeight="320.0" prefWidth="382.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="213.0" minWidth="10.0" prefWidth="213.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.39996337890625" minWidth="10.0" prefWidth="29.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="125.59998168945313" minHeight="0.0" prefHeight="46.20001220703125" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="364.79999999999995" minHeight="10.0" prefHeight="259.59996337890624" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="49.60001220703123" minHeight="0.0" prefHeight="34.80003662109374" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="50.0" prefWidth="243.0" text="Item" />
+            <Label alignment="CENTER" prefHeight="54.0" prefWidth="58.0" text="Qty." GridPane.columnIndex="1" />
+            <Label alignment="CENTER" prefHeight="78.0" prefWidth="144.0" text="price" GridPane.columnIndex="2" />
+            <Label fx:id="item1" alignment="TOP_CENTER" prefHeight="258.0" prefWidth="228.0" GridPane.rowIndex="1" />
+            <Label fx:id="qty1" alignment="TOP_CENTER" prefHeight="385.0" prefWidth="60.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="price2" alignment="TOP_CENTER" prefHeight="350.0" prefWidth="194.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#btn1" prefHeight="61.0" prefWidth="289.0" text="Total value" GridPane.rowIndex="2" />
+            <Label fx:id="value" alignment="CENTER" prefHeight="78.0" prefWidth="165.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Button layoutX="472.0" layoutY="551.0" mnemonicParsing="false" onAction="#update" prefHeight="26.0" prefWidth="99.0" stylesheets="@bill.css" text="Update" />
+      <ImageView fitHeight="111.0" fitWidth="120.0" layoutX="466.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../sample/invoice.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn1" layoutX="123.0" layoutY="23.0" mnemonicParsing="false" onAction="#btn2" prefHeight="74.0" prefWidth="333.0" text="INVOICE">
+         <font>
+            <Font size="42.0" />
+         </font></Button>
+
+   </children>
+</AnchorPane>

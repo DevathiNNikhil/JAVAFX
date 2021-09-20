@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="250.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goods.Goods">
+   <children>
+      <TextField fx:id="item2" alignment="CENTER" layoutX="121.0" layoutY="94.0" promptText="Item" />
+      <Button layoutX="170.0" layoutY="148.0" mnemonicParsing="false" onAction="#delete" text="delete" />
+      <Button layoutX="14.0" layoutY="27.0" mnemonicParsing="false" onAction="#home">
+         <graphic>
+            <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@home.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label fx:id="status1" alignment="CENTER" layoutX="122.0" layoutY="50.0" prefHeight="18.0" prefWidth="150.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

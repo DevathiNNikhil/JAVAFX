@@ -1,0 +1,15 @@
+.root{
+   -fx-background-color:white;
+}
+#itemb{
+   -fx-font-size:30px;
+   -fx-background-color:white;
+   -fx-text-fill:Green;
+   
+}
+#btn{
+   -fx-font-size:40px;
+   -fx-background-color:white;
+   -fx-text-fill:red;
+   
+}
